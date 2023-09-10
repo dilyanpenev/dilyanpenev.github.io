@@ -1,9 +1,54 @@
 .header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     h1 {
         font-family: $font-title;
         font-weight: 800;
         text-align: center;
         font-size: 5vh;
         text-decoration: underline;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__links {
+            display: flex;
+            align-items: center;
+
+            h3 {
+                font-family: $font-title;
+                font-weight: 300;
+                margin-left: 1.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $coral;
+                }
+            }
+        }
+
+        &__socials {
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+
+            .icon {
+                font-size: 2.5vh;
+                margin-left: 1rem;
+                cursor: pointer;
+                color: $black;
+
+                &:hover {
+                    opacity: 0.8;
+                    color: $coral;
+                }
+            }
+        }
     }
 }

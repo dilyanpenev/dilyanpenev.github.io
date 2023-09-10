@@ -5,7 +5,7 @@ export const SectionData = [
         inspiration: "Fredericia Yksi and Pal",
         description: "Modelled from scratch using provided blueprints.",
         tags: ["Blender"],
-        image_paths: ["/images/stolmasa.jpg", "/images/yksi_chair.png"]
+        image_paths: ["/images/renders/stolmasa.jpg", "/images/renders/yksi_chair.png"]
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const SectionData = [
         inspiration: "Zanotta Milano+",
         description: "Modelled from scratch using provided blueprints, soft elements created using cloth simulation techniques with additional details and suitable textures.",
         tags: ["Blender", "cloth simulation"],
-        image_paths: ["/images/milanoplus.png"]
+        image_paths: ["/images/renders/milanoplus.png"]
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const SectionData = [
         inspiration: "@cremelamare",
         description: "Modelled from scratch using only one reference image and generated material textures.",
         tags: ["Blender"],
-        image_paths: ["/images/kafevarka.png"]
+        image_paths: ["/images/renders/kafevarka.png"]
     },
     // {
     //     id: 4,
