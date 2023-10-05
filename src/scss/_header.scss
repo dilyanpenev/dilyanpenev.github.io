@@ -2,13 +2,25 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 3vh 0;
+    background: $white;
+    background: linear-gradient(0deg, $white 0%, rgba(245, 245, 245, 1) 12%, $platinum 100%);
 
-    h1 {
-        font-family: $font-title;
-        font-weight: 800;
-        text-align: center;
-        font-size: 5vh;
-        text-decoration: underline;
+    .animation-wrapper {
+        overflow: hidden;
+    }
+
+    .title-wrapper {
+        margin-bottom: 3vh;
+
+        h1 {
+            font-family: $font-title;
+            font-weight: 800;
+            text-align: center;
+            font-size: 5vh;
+            animation: slide-up 0.75s cubic-bezier(0.65, 0, 0.35, 1) both;
+            margin-bottom: 0.5vh;
+        }
     }
 
     .nav {
@@ -22,33 +34,54 @@
 
             h3 {
                 font-family: $font-title;
-                font-weight: 300;
-                margin-left: 1.5rem;
+                font-weight: 500;
+                margin: 0 0.75rem;
+                text-decoration: none;
                 cursor: pointer;
+                position: relative;
+                padding-bottom: 0.25vh;
+                animation: slide-up 1.25s cubic-bezier(0.65, 0, 0.35, 1) both;
 
                 &:hover {
-                    text-decoration: underline;
-                    color: $coral;
+                    &:after {
+                        width: 100%;
+                        left: 0;
+                    }
                 }
+
+                &:after {
+                    background: none repeat scroll 0 0 $orange;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    height: 2px;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
             }
         }
 
         &__socials {
             display: flex;
             align-items: center;
-            margin-left: 2rem;
+            margin: 0 1rem;
 
             .icon {
-                font-size: 2.5vh;
-                margin-left: 1rem;
+                font-size: 3vh;
+                margin: 0 0.5rem;
                 cursor: pointer;
                 color: $black;
+                animation: slide-up 1.25s cubic-bezier(0.65, 0, 0.35, 1) both;
 
                 &:hover {
                     opacity: 0.8;
-                    color: $coral;
+                    color: $orange;
                 }
             }
+
         }
     }
 }

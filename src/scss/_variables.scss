@@ -1,9 +1,20 @@
 // fonts
-$font-title: 'Lexend Tera', sans-serif;
-$font-tag: 'Lexend Deca', sans-serif;
+$font-title: 'Josefin Sans', sans-serif;
 
 // colours
 $white: #FFFFFF;
-$grey: #EAD7D7;
-$coral: #FF7F50;
-$black: #4C4443;
+$platinum: #E5E5E5;
+$orange: #FCA311;
+$dark-blue: #14213D;
+$black: #000000;
+
+// animations
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}

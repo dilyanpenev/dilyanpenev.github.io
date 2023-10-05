@@ -38,7 +38,7 @@
             &__title {
                 font-family: $font-title;
                 font-size: 2.5rem;
-                font-weight: 300;
+                font-weight: 500;
             }
 
             &__subtitle {
@@ -49,7 +49,7 @@
 
             &__description {
                 font-family: $font-title;
-                font-weight: 200;
+                font-weight: 300;
             }
 
             .tagbox-list {
@@ -57,7 +57,7 @@
                 flex-wrap: wrap;
 
                 .tagbox {
-                    background-color: $coral;
+                    background-color: $orange;
                     display: block;
                     padding: 1vh 2vh;
                     border-radius: 1vh;
@@ -65,7 +65,7 @@
                     margin-bottom: 1vh;
 
                     h5 {
-                        font-family: $font-tag;
+                        font-family: $font-title;
                         font-weight: 500;
                         color: $white;
                     }
@@ -76,6 +76,8 @@
         .section-image {
             height: 50vh;
             margin: 2.5vh;
+            display: flex;
+            align-items: center;
 
             @media only screen and (min-device-width: 801px) {
                 height: 75vh;
