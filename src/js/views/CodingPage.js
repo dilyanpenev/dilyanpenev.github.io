@@ -11,7 +11,8 @@ function CodingPage(props) {
                     title: section.title,
                     description: section.description,
                     tags: section.tags,
-                    image_path: section.image_paths[0]
+                    image_path: section.image_paths[0],
+                    website_link: section.website_link,
                 })
             })}
         </div>
@@ -23,9 +24,15 @@ function CodingPageSection(props) {
         <div key={props.key} className={`renders-page__section`}>
             <div className="section-text">
                 <h2 className="section-text__title">{props.title}</h2>
-                <p className="section-text__description">{props.description}</p>
-                <h4 className="section-text__subtitle">Technologies used:</h4>
                 <TagList tags={props.tags} />
+                <p className="section-text__description">{props.description}</p>
+                <div className="section-text__more">
+                    <a href={props.website_link} target="_blank" rel="noreferrer">
+                        <div className="more-button">
+                            <i className="icon fa fa-arrow-right" style={{ opacity: 0 }}></i>More info <span className="more-button__extra"><i className="icon fa fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div className="section-image"><img src={props.image_path} alt={props.title} /></div>
         </div>

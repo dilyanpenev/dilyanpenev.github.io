@@ -27,8 +27,8 @@ function RendersPageSection(props) {
                 {props.inspiration !== "" &&
                     <h4 className="section-text__subtitle">Inspired by: {props.inspiration}</h4>
                 }
-                <p className="section-text__description">{props.description}</p>
                 <TagList tags={props.tags} />
+                <p className="section-text__description">{props.description}</p>
             </div>
             <div className="section-image"><img src={props.image_path} alt={props.title} /></div>
         </div>

@@ -27,8 +27,23 @@
             flex-wrap: nowrap;
         }
 
+        &:nth-child(odd) {
+            .section-text {
+                border-left: 0.2rem solid $dark-blue;
+                padding-left: 1.5rem;
+            }
+        }
+
+        &:nth-child(even) {
+            .section-text {
+                border-right: 0.2rem solid $dark-blue;
+                padding-right: 1.5rem;
+            }
+        }
+
         .section-text {
             margin: 2.5vh 5vh;
+            font-family: $font-title;
 
             @media only screen and (min-device-width: 801px) {
                 margin: 2.5vh 10vh;
@@ -36,20 +51,51 @@
             }
 
             &__title {
-                font-family: $font-title;
-                font-size: 2.5rem;
+                font-size: 2.75rem;
                 font-weight: 500;
             }
 
             &__subtitle {
-                font-family: $font-title;
                 font-style: italic;
-                font-weight: 200;
+                font-weight: 300;
             }
 
             &__description {
-                font-family: $font-title;
-                font-weight: 300;
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+
+            &__more {
+                font-weight: 500;
+                font-size: 1.1rem;
+                border: 0.2rem solid $dark-blue;
+                border-radius: 1rem;
+                color: $dark-blue;
+                display: inline-block;
+                transition: all 1s ease-in;
+                background: linear-gradient(to right, $dark-blue 50%, $white 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+
+                .more-button {
+                    margin: 0.5vh 1.5vh;
+
+                    &__extra {
+                        opacity: 0;
+                        transition: all 0.75s;
+                    }
+                }
+
+                &:hover {
+                    color: $orange;
+                    background-position: left bottom;
+
+                    .more-button {
+                        &__extra {
+                            opacity: 1;
+                        }
+                    }
+                }
             }
 
             .tagbox-list {
@@ -66,8 +112,9 @@
 
                     h5 {
                         font-family: $font-title;
-                        font-weight: 500;
-                        color: $white;
+                        font-weight: 700;
+                        color: $dark-blue;
+                        opacity: 0.9;
                     }
                 }
             }
