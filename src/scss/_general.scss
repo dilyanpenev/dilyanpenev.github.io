@@ -15,3 +15,7 @@ h5 {
     color: $dark-blue;
     opacity: 0.9;
 }
+
+main {
+    animation: fadeIn ease-in 3.5s;
+}

@@ -5,7 +5,9 @@ function PageWrapper(props) {
     return (
         <div className='page-wrapper'>
             <Header />
-            <Outlet />
+            <main>
+                <Outlet />
+            </main>
         </div>
     );
 }

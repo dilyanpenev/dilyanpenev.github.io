@@ -72,7 +72,7 @@
                 border-radius: 1rem;
                 color: $dark-blue;
                 display: inline-block;
-                transition: all 1s ease-in;
+                transition: all 0.75s ease-in;
                 background: linear-gradient(to right, $dark-blue 50%, $white 50%);
                 background-size: 200% 100%;
                 background-position: right bottom;
@@ -82,7 +82,7 @@
 
                     &__extra {
                         opacity: 0;
-                        transition: all 0.75s;
+                        transition: all 0.5s;
                     }
                 }
 
@@ -109,12 +109,17 @@
                     border-radius: 1vh;
                     margin-right: 2vh;
                     margin-bottom: 1vh;
+                    transition: transform 0.5s;
 
                     h5 {
                         font-family: $font-title;
                         font-weight: 700;
                         color: $dark-blue;
                         opacity: 0.9;
+                    }
+
+                    &:hover {
+                        transform: translateY(-10px);
                     }
                 }
             }
