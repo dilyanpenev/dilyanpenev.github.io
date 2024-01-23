@@ -1,50 +1,24 @@
 .renders-page {
     position: relative;
 
-    &>div:nth-child(even) {
-        flex-direction: row-reverse;
-
-        .section-text {
-            text-align: right;
-
-            .tagbox-list {
-                justify-content: flex-end;
-
-                .tagbox {
-                    margin-right: 0vh;
-                    margin-left: 2vh;
-                }
-            }
-        }
-    }
-
     &__section {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        min-height: 80vh;
+        position: relative;
+        padding: 0 3vw;
 
         @media only screen and (min-device-width: 801px) {
             flex-wrap: nowrap;
         }
 
-        &:nth-child(odd) {
-            .section-text {
-                border-left: 0.2rem solid $dark-blue;
-                padding-left: 1.5rem;
-            }
-        }
-
-        &:nth-child(even) {
-            .section-text {
-                border-right: 0.2rem solid $dark-blue;
-                padding-right: 1.5rem;
-            }
-        }
-
         .section-text {
             margin: 2.5vh 5vh;
             font-family: $font-title;
+            border-left: 0.2rem solid $dark-blue;
+            padding-left: 1.5rem;
 
             @media only screen and (min-device-width: 801px) {
                 margin: 2.5vh 10vh;
@@ -139,6 +113,8 @@
             img {
                 max-height: 100%;
                 max-width: 100%;
+                border-top-left-radius: 5vw;
+                border-bottom-right-radius: 5vw;
             }
         }
     }

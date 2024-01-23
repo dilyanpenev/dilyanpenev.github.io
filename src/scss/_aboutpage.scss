@@ -1,0 +1,9 @@
+.about-page {
+    .hero-section {
+        min-height: 80vh;
+        background-color: $dark-blue;
+        position: relative;
+        border-bottom-right-radius: 15vw;
+        @include sectionCrops($dark-blue, $white);
+    }
+}

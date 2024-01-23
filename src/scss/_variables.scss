@@ -29,3 +29,26 @@ $black: #000000;
         transform: translateX(50%) scaleX(0);
     }
 }
+
+@mixin sectionCrops($current-colour, $next-colour) {
+    &:before {
+        content: "";
+        background-color: $current-colour;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 15vw;
+        height: 15vw;
+    }
+
+    &:after {
+        content: "";
+        background-color: $next-colour;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 15vw;
+        height: 15vw;
+        border-top-left-radius: 15vw;
+    }
+}

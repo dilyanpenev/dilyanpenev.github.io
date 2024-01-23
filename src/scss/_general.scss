@@ -1,10 +1,20 @@
 body {
     margin: 0;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 
     a {
         text-decoration: none;
         color: inherit;
     }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
 }
 
 h5 {
@@ -14,6 +24,10 @@ h5 {
 .text-dark-blue {
     color: $dark-blue;
     opacity: 0.9;
+}
+
+.text-platinum {
+    color: $platinum;
 }
 
 .bar-loader {
@@ -26,7 +40,7 @@ h5 {
     z-index: 1000;
 
     .bar {
-        background-color: red;
+        background-color: $platinum;
         height: 20%;
 
         &.barOut {

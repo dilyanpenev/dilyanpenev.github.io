@@ -5,13 +5,16 @@ function Navigation(props) {
         <div className="nav" >
             <div className="nav__links">
                 <div className="animation-wrapper">
-                    <h3><Link to="/projects">Projects</Link></h3>
+                    <h3><Link to="/coding">Projects</Link></h3>
                 </div>
                 <div className="animation-wrapper">
                     <h3><Link to="/renders">Renders</Link></h3>
                 </div>
                 <div className="animation-wrapper">
                     <h3><a href="https://public.tableau.com/app/profile/dilyan.penev" target="_blank" rel="noreferrer">Tableau</a></h3>
+                </div>
+                <div className="animation-wrapper">
+                    <h3><Link to="/">About</Link></h3>
                 </div>
             </div >
             <div className="nav__socials">

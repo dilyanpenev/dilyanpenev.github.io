@@ -21,7 +21,7 @@ function CodingPage(props) {
 
 function CodingPageSection(props) {
     return (
-        <div key={props.key} className={`renders-page__section`}>
+        <section key={props.key} className={`renders-page__section`}>
             <div className="section-text">
                 <h2 className="section-text__title">{props.title}</h2>
                 <TagList tags={props.tags} />
@@ -35,7 +35,7 @@ function CodingPageSection(props) {
                 </div>
             </div>
             <div className="section-image"><img src={props.image_path} alt={props.title} /></div>
-        </div>
+        </section>
     );
 }
 
