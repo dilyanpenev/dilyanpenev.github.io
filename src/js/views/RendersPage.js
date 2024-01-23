@@ -5,6 +5,13 @@ function RendersPage(props) {
 
     return (
         <div className="renders-page">
+            <section className="hero-section">
+                <div className="hero-wrapper">
+                    <h1 className="hero-title">
+                        Rendering Projects
+                    </h1>
+                </div>
+            </section>
             {SectionData.map(section => {
                 return RendersPageSection({
                     key: section.id,

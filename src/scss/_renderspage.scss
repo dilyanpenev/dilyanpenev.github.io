@@ -1,6 +1,29 @@
 .renders-page {
     position: relative;
 
+    .hero-section {
+        min-height: 45vh;
+        background-color: $dark-blue;
+        position: relative;
+        border-bottom-right-radius: 15vw;
+        @include sectionCrops($dark-blue, $white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hero-wrapper {
+            text-align: center;
+
+            .hero-title {
+                margin: 0;
+                color: $platinum;
+                font-size: 10vh;
+                line-height: 1em;
+                font-family: $font-title;
+            }
+        }
+    }
+
     &__section {
         display: flex;
         justify-content: space-between;

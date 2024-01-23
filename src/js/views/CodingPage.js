@@ -5,6 +5,13 @@ function CodingPage(props) {
 
     return (
         <div className="renders-page">
+            <section className="hero-section">
+                <div className="hero-wrapper">
+                    <h1 className="hero-title">
+                        Coding Projects
+                    </h1>
+                </div>
+            </section>
             {SectionData.map(section => {
                 return CodingPageSection({
                     key: section.id,
