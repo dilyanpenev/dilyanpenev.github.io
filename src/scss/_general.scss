@@ -16,6 +16,37 @@ h5 {
     opacity: 0.9;
 }
 
-main {
-    animation: fadeIn ease-in 3.5s;
+.bar-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+
+    .bar {
+        background-color: red;
+        height: 20%;
+
+        &.barOut {
+            animation: barOut ease-in 1s;
+            animation-fill-mode: forwards;
+        }
+
+        &.barIn {
+            animation: barIn ease-in 1s;
+            animation-fill-mode: forwards;
+        }
+
+        &.none {
+            display: none;
+        }
+    }
+
+    @for $i from 1 through 5 {
+        .bar:nth-child(#{$i}) {
+            animation-delay: calc(#{$i} * 100ms);
+        }
+    }
 }

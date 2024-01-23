@@ -15,11 +15,20 @@ export const SectionData = [
         image_paths: ["/images/coding/zagradka.png"],
         website_link: "https://github.com/dilyanpenev/zagradka#zagradka"
     },
+    {
+        id: 3,
+        title: "Customised PowerShell",
+        description: "Displays a random interesting fact every time you open the terminal. The fact is presented alongside with current data and time information and a motivational quote.",
+        tags: ["Python", "Web scraping"],
+        image_paths: ["/images/coding/powershell.png"],
+        website_link: "https://github.com/dilyanpenev/powershell-startup?tab=readme-ov-file#-powershell-startup-"
+    },
     // {
-    //     id: 3,
+    //     id: 4,
     //     title: "",
     //     description: "",
     //     tags: [],
-    //     image_paths: []
+    //     image_paths: [],
+    //     website_link: ""
     // },
 ]

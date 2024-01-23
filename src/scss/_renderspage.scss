@@ -1,4 +1,5 @@
 .renders-page {
+    position: relative;
 
     &>div:nth-child(even) {
         flex-direction: row-reverse;
