@@ -1,9 +1,88 @@
 .about-page {
+    section {
+        min-height: 75vh;
+        padding: 3vh 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .hero-section {
-        min-height: 80vh;
         background-color: $dark-blue;
         position: relative;
         border-bottom-right-radius: 15vw;
         @include sectionCrops($dark-blue, $white);
+
+        .hero-title {
+            color: $platinum;
+            font-family: $font-title;
+            text-align: center;
+
+            @media only screen and (min-device-width: 801px) {
+                letter-spacing: 2em;
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 10vh;
+            }
+        }
+
+        .hero-wrapper {
+            margin: 4vh 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            @media only screen and (min-device-width: 801px) {
+                margin: 7vh 0;
+            }
+
+            .hero-image {
+                height: 35vh;
+                margin: 2.5vh 0;
+
+                img {
+                    max-height: 100%;
+                    width: auto;
+                    border-radius: 100%;
+                }
+            }
+
+            .hero-intro {
+
+                @media only screen and (min-device-width: 801px) {
+                    flex-basis: 50%;
+                }
+
+                li {
+                    color: rgba($color: $platinum, $alpha: 0.65);
+                    font-family: $font-title;
+                    font-size: 4vh;
+                    font-weight: 600;
+                    margin: 2vh 0;
+                    padding-left: 1vw;
+                    line-height: 1.15;
+
+                    &::marker {
+                        content: "▶";
+                        -webkit-animation: rotating 15s ease-in-out infinite;
+                        -moz-animation: rotating 15s ease-in-out infinite;
+                        -ms-animation: rotating 15s ease-in-out infinite;
+                        -o-animation: rotating 15s ease-in-out infinite;
+                        animation: rotating 15s ease-in-out infinite;
+                    }
+
+                    .emphasys {
+                        color: rgba($color: $platinum, $alpha: 1);
+                    }
+                }
+            }
+        }
+    }
+
+    .about-section {
+        align-items: center;
     }
 }

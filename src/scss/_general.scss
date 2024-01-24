@@ -64,3 +64,57 @@ h5 {
         }
     }
 }
+
+// FlipButton
+#button-wrapper {
+    border: 3px $dark-blue solid;
+    padding: 1.5vh 2vw;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease-in-out 0s;
+    width: fit-content;
+    border-radius: 2vh;
+}
+
+#button-wrapper:hover {
+    border: 6px $dark-blue solid;
+    transform: scale(1.15, 1.15);
+    transition: all 1s ease-in-out 0s;
+}
+
+#topword {
+    position: absolute;
+}
+
+.topchar {
+    transform: scaleY(1) translateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#button-wrapper:hover .topchar {
+    transform: translateY(-50%) scaleY(0.0000001);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.bottomchar {
+    transform: translateY(50%) scaleY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#button-wrapper:hover .bottomchar {
+    transform: translateY(0) scaleY(1);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.word {
+    color: $dark-blue;
+    font-family: $font-title;
+    font-size: 6vh;
+    display: flex;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.space {
+    padding: 10px;
+}
