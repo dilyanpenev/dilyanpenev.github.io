@@ -1,7 +1,7 @@
 .about-page {
     section {
         min-height: 75vh;
-        padding: 3vh 3vw;
+        padding: 3vh 5vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -62,8 +62,12 @@
                     font-size: 4vh;
                     font-weight: 600;
                     margin: 2vh 0;
-                    padding-left: 1vw;
+                    padding-left: 2vw;
                     line-height: 1.15;
+
+                    @media only screen and (min-device-width: 801px) {
+                        padding-left: 1vw;
+                    }
 
                     &::marker {
                         content: "▶";
@@ -84,5 +88,31 @@
 
     .about-section {
         align-items: center;
+        gap: 5vh;
+
+        .section-title {
+            color: $dark-blue;
+            font-family: $font-title;
+            text-align: center;
+            z-index: 100;
+
+            h4 {
+                margin: 0;
+                font-size: 6vh;
+
+                @media only screen and (min-device-width: 801px) {
+                    font-size: 7vh;
+                }
+            }
+
+            .link-animation {
+                transition: all 0.5s ease-in-out;
+                font-style: italic;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
     }
 }

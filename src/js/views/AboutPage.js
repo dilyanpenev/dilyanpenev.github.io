@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FlipButton from "../components/FlipButton";
 
 function AboutPage(props) {
@@ -22,6 +23,12 @@ function AboutPage(props) {
                 </div>
             </section>
             <section className="about-section">
+                <div className="section-title">
+                    <h4>Check out my <span className="link-animation"><Link to="/coding">coding</Link></span>, <span className="link-animation"><Link to="/renders">rendering</Link></span> and <span className="link-animation"><a href="https://public.tableau.com/app/profile/dilyan.penev" target="_blank" rel="noreferrer">data visualisation</a></span> projects</h4>
+                </div>
+                <div className="section-title">
+                    <h4>or</h4>
+                </div>
                 <FlipButton title="Get in touch" link="mailto:dilyanpenev@gmail.com" />
             </section>
         </div>
